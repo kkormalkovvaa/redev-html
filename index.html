@@ -3,27 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1.2 HTML</title>
+    <title>1.4 CSS</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #FFF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            background-color: #FAF2E6;
+            margin: 64px 340px;
+        }
+
+        .card__title {
+            color: #205529;
+            margin: 40px 100px 12px 100px;
+            text-align: center;
+        }
+
+        .card__text {
+            color: #205529;
+            margin: 0 80px 20px 80px;
+            text-align: center;
+        }
+
+        .card__btn {
+            background-color: #205529;
+            color: #FAF2E6;
+            padding: 12px 16px;
+            border-radius: 6px;
+            margin: 0 185px 40px 185px;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Задача 121 HTML</h1>
-        <p>Lorem ipsum dolor sit amet consectetur.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-    </header>
-
-    <main>
-        <img src="./ducks.png" alt="утки">
-        <br>
-        <a href="https://redev.by/" target="_blank">REDEV</a>
-    </main>
-
-    <footer>
-        <ul>
-            <li>JS</li>
-            <li>REACT</li>
-            <li>HTML/CSS</li>
-        </ul>
-    </footer>
+    <div class="card">
+        <div class="card__content">
+            <h1 class="card__title">Enjoy 20% Off <br>Your First Bouquet!</h1>
+            <p class="card__text">Save big on your first fresh delivery.</p>
+            <button class="card__btn">Order Bouquet</button>
+        </div>
+    </div>
 </body>
 </html>
