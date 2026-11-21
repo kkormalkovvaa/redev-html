@@ -2,53 +2,27 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Inter Tight', sans-serif;
 }
 
-a {
-    text-decoration: none;
-    color: #070707;
-}
-
-.wrapper {
-    background-color: #000;
-    height: 100vh;
-}
-
-header {
-    position: sticky;
-    top: 0;
-}
-
-.header__inner {
-    background-color: #fff;
+.cards {
+    max-width: 1140px;
+    margin: 200px auto;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 75px;
+    gap: 30px;
 }
 
-.header__logo {
+.card {
+    width: 360px;
+    height: 450px;
+    background-size: 360px 380px;
+    border-bottom: 2px solid #00AC6D;
+}
+
+.card_text {
+    margin-top: 20px;
     font-weight: 500;
     font-size: 24px;
-    line-height: 32px;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    gap: 32px;
-}
-
-.header__link {
-    font-size: 14px;
-    line-height: 20px;
-}
-
-.contact__btn {
-    background-color: #F5F5F5;
-    border: none;
-    border-radius: 72px;
-    padding: 12px 10px;
-    color: #070707;
-    cursor: pointer;
+    letter-spacing: -2%;
+    text-transform: uppercase;
 }
