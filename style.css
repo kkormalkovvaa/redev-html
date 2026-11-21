@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter Tight', sans-serif;
+}
+
+.cards {
+    max-width: 1140px;
+    margin: 200px auto;
+    display: flex;
+    gap: 30px;
+}
+
+.card {
+    width: 360px;
+    height: 450px;
+    background-size: 360px 380px;
+    border-bottom: 2px solid #00AC6D;
+}
+
+.card_text {
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: -2%;
+    text-transform: uppercase;
+}
