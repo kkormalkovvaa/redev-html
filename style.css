@@ -2,70 +2,65 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Manrope', sans-serif;
 }
 
-.container {
-    margin-left: 15px;
+.wrapper__title {
+    font-size: 56px;
+    font-weight: 300;
+    line-height: 112%;
+    letter-spacing: -4%;
+    margin: 104px 0 64px 56px;
+}
+
+.cards {
+    max-width: 1330px;
     display: flex;
-    gap: 40px;
+    gap: 24px;
+    margin: 0 auto;
 }
 
-h3 {
-    margin: 15px;
+.card__data {
+    color: #827E7C;
+    font-size: 16px;
+    line-height: 136%;
+    margin-top: 20px;
+    margin-bottom: 16px;
 }
 
-p {
-    margin: 10px;
+.card__title {
+    font-size: 20px;
+    line-height: 112%;
+    letter-spacing: -2%;
+    color: #2A2420;
+    margin-bottom: 8px;
 }
 
-.button__primary {
-    background-color: #FF6636;
-    color: #FFFFFF;
-    padding: 10px 24px;
-    border: none;
-    cursor: pointer;
-    transition: all 0.3s linear;
+.card__text {
+    font-size: 18px;
+    line-height: 136%;
+    color: #2A2420;
+    width: 395px;
 }
 
-.button__primary:hover {
-    background-color: #CC522B;
-    box-shadow: 2px 2px 4px rgba(204, 82, 43, 0.5);
+@media screen and (max-width: 1024px) {
+    .cards {
+        max-width: 912px;
+        margin: 0 auto;
+    }
 }
 
-.button__primary:disabled {
-    background-color: #FFDDD1;
-    pointer-events: none;
-}
+@media screen and (max-width: 375px) {
+    .wrapper__title {
+        margin-left: 16px;
+    }
 
-.button__simple {
-    color: #23BD33;
-    text-decoration: none;
-}
+    .cards {
+        display: flex;
+        flex-direction: column;
+        column-gap: 16px;
+        max-width: 343px;
+        margin: 0 auto;
+    }
 
-.button__simple:hover {
-    border-bottom: 1px solid #23BD33;
-}
-
-.form__input {
-    border: 1px solid #E9EAF0;
-    padding-left: 18px;
-    padding-bottom: 12px;
-    padding-top: 12px;
-    transition: all 0.2s linear;
-    color: #000;
-    outline: none;
-}
-
-.form__input::placeholder {
-    color: #B7BAC7;
-}
-
-.form__input:hover {
-    border: 3px solid #FFDDD1;
-}
-
-.form__input:active,
-.form__input:focus {
-    border: 1px solid #FF6636;
 }

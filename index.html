@@ -6,39 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>1.12 Анимации и переходы</title>
+    <title>1.13 Адаптивная верстка</title>
 </head>
 
 <body>
     <div class="wrapper">
-        <div class="container">
-
-            <div class="buttons">
-                <h3>Buttons</h3>
-                <div class="buttons__primary">
-                    <p>Primary</p>
-                    <button class="button__primary">button</button>
-                    <button class="button__primary" disabled>button</button>
-
+        <h1 class="wrapper__title">Blog</h1>
+        <div class="cards">
+            <div class="card">
+                <div class="card__image">
+                    <img src="img1.png" alt="laptop">
                 </div>
-                <div class="buttons__simple">
-                    <p>Simple buttons</p>
-                    <a class="button__simple" href="#">
-                        <span>button -></span>
-                    </a>
+                <div class="card__info">
+                    <p class="card__data">12 January, 2025</p>
+                    <p class="card__title">Blog title</p>
+                    <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
+                        enim in eros.</p>
                 </div>
             </div>
-            <div class="input__form">
-                <h3>Form elements</h3>
-                <p>Input Field</p>
-                <input class="form__input" type="text" placeholder="Введите текст">
+            <div class="card">
+                <div class="card__image">
+                    <img src="img2.png" alt="laptop">
+                </div>
+                <div class="card__info">
+                    <p class="card__data">12 January, 2025</p>
+                    <p class="card__title">Blog title</p>
+                    <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
+                        enim in eros.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__image">
+                    <img src="img3.png" alt="boy">
+                </div>
+                <div class="card__info">
+                    <p class="card__data">12 January, 2025</p>
+                    <p class="card__title">Blog title</p>
+                    <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
+                        enim in eros.</p>
+                </div>
             </div>
         </div>
-
     </div>
 </body>
 
