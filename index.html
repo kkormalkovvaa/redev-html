@@ -6,82 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>1.11 Формы</title>
+    <title>1.12 Анимации и переходы</title>
 </head>
 
 <body>
     <div class="wrapper">
         <div class="container">
-            <form action="">
-                <div class="input__name">
-                    <label for="name">Имя и Фамилия</label>
-                    <input type="text" placeholder="Александра Иванова" id="name">
-                </div>
-                <fieldset class="form__fieldset fieldset__price">
-                    <legend class="form_legend">Показать цену</legend>
-                    <div class="price__input">
-                        <input class="form__input" type="radio" name="price" id="person">
-                        <label class="form__label" for="person">
-                            <div class="form__custom-radio"></div>
-                            на человека
-                        </label>
-                    </div>
-                    <div class="price__input">
-                        <input class="form__input" type="radio" name="price" id="all">
-                        <label class="form__label" for="all">
-                            <div class="form__custom-radio"></div>
-                            на всех
-                        </label>
-                    </div>
-                </fieldset>
 
-                <fieldset class="form__fieldset fieldset__food">
-                    <legend class="form_legend">Еда</legend>
-                    <div class="food__choose">
-                        <input class="form__input" type="radio" name="food" id="twice">
-                        <label class="form__label" for="twice">
-                            <div class="form__custom-radio"></div>
-                            2-х разовое питание
-                        </label>
-                    </div>
-                    <div class="food__choose">
-                        <input class="form__input" type="radio" name="food" id="thrice">
-                        <label class="form__label" for="thrice">
-                            <div class="form__custom-radio"></div>
-                            3-х разовое питание
-                        </label>
-                    </div>
-                    <div class="food__choose">
-                        <input class="form__input" type="radio" name="food" id="all_inclusive">
-                        <label class="form__label" for="all_inclusive">
-                            <div class="form__custom-radio"></div>
-                            Все включено
-                        </label>
-                    </div>
-                    <div class="food__choose">
-                        <input class="form__input" type="radio" name="food" id="zero">
-                        <label class="form__label" for="zero">
-                            <div class="form__custom-radio"></div>
-                            Без еды
-                        </label>
-                    </div>
-                    <div class="food__choose">
-                        <input class="form__input" type="radio" name="food" id="breakfast">
-                        <label class="form__label" for="breakfast">
-                            <div class="form__custom-radio"></div>
-                            Завтраки
-                        </label>
-                    </div>
-                </fieldset>
-                <div class="buttons">
-                    <button class="btn" type="submit">Отправить</button>
-                    <button class="btn" type="reset">Сбросить</button>
+            <div class="buttons">
+                <h3>Buttons</h3>
+                <div class="buttons__primary">
+                    <p>Primary</p>
+                    <button class="button__primary">button</button>
+                    <button class="button__primary" disabled>button</button>
+
                 </div>
-            </form>
+                <div class="buttons__simple">
+                    <p>Simple buttons</p>
+                    <a class="button__simple" href="#">
+                        <span>button -></span>
+                    </a>
+                </div>
+            </div>
+            <div class="input__form">
+                <h3>Form elements</h3>
+                <p>Input Field</p>
+                <input class="form__input" type="text" placeholder="Введите текст">
+            </div>
         </div>
+
     </div>
 </body>
 
