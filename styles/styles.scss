@@ -1,0 +1,35 @@
+@import 'variable';
+@import 'mixins';
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    color: $text-color;
+    background-color: $background-color;
+
+    @include tablet {
+        padding: 15px;
+        max-width: 700px;
+
+    }
+
+    @include mobile {
+        padding: 10px;
+        max-width: 400px;
+    }
+}
+
+h1 {
+    font-size: 36px;
+
+    @include tablet {
+        font-size: 26px;
+    }
+
+    @include mobile {
+        font-size: 12px;
+    }
+}
