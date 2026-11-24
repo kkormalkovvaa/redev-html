@@ -1,17 +1,4 @@
-@mixin mobile {
-    @media(max-width: #{$breakpoint-mobile}) {
-        @content
-    }
-}
-
-@mixin tablet {
-    @media(max-width: #{$breakpoint-tablet}) {
-        @content
-    }
-}
-
-@mixin laptop {
-    @media(max-width: #{$breakpoint-laptop}) {
-        @content
-    }
+@mixin font($size, $line-height) {
+    font-size: $size;
+    line-height: $line-height;
 }
